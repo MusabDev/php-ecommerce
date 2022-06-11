@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureShop - A shopping site</title>
+
+    <!-- OwlCarousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Theme.css -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+  </head>
+  <body class="bg-[#EFF2F6]">
+    <!-- Top navigation -->
+    <div class="bg-black py-2">
+      <div class="container flex justify-between items-center">
+        <div class="text-white uppercase">USD</div>
+        <div class="text-white uppercase">
+          Free Shipping on all herman miller!
+        </div>
+        <div class="text-white">
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+    <!-- Main navbar -->
+    <nav
+      class="border-b border-[#6B6B6B] py-3 sticky top-0 left-0 w-full bg-[#EFF2F6]/[0.9] backdrop-blur z-50"
+    >
+      <div class="container flex justify-between flex-wrap items-center">
+        <div class="left flex items-center flex-wrap">
+          <!-- Logo -->
+          <div>
+            <a href="index.html" class="text-black font-bold text-[24px]">
+              PureShop
+            </a>
+          </div>
+          <!-- Nav links -->
+          <ul class="ml-3 flex flex-wrap">
+            <li class="mx-3">
+              <a
+                href="index.html"
+                class="text-blue-600 font-medium text-[17px]"
+              >
+                Home
+              </a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-black text-[17px]">Shop</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-black text-[17px]">Shirts</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-black text-[17px]">T-Shirts</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-black text-[17px]">Pants</a>
+            </li>
+            <form class="flex items-center ml-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="text"
+                class="text-black placeholder:text-[#6B6B6B] border-none outline-none bg-transparent pl-2"
+                placeholder="Search..."
+              />
+            </form>
+          </ul>
+        </div>
+
+        <div class="right">
+          <ul class="ml-3 flex flex-wrap">
+            <li class="mx-3">
+              <a href="#" class="text-black text-[17px] inline-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  />
+                </svg>
+                <span class="inline-block ml-2">3</span>
+              </a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-black text-[17px]">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="py-[100px]">
+      <div class="container">
+        <div class="content text-center max-w-[900px] w-full mx-auto">
+          <h1 class="text-6xl font-semibold mb-6">
+            Better clothing for the planet
+          </h1>
+          <p class="max-w-[600px] w-full mx-auto text-gray-700 mb-7">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+            harum libero ab, dolorum est mollitia.
+          </p>
+          <button
+            class="inline-block border px-6 py-2 border-black font-medium text-black text-lg hover:bg-black hover:text-white transition"
+          >
+            Shop Now
+          </button>
+        </div>
+        <!-- Carousel -->
+        <div class="owl-carousel mt-10">
+          <img
+            src="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+            alt=""
+            class="w-full aspect-video object-cover object-center"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt=""
+            class="w-full aspect-video object-cover object-center"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="py-[70px]">
+      <div class="container">
+        <div
+          class="section-head mb-8 flex justify-between items-center flex-wrap"
+        >
+          <h2 class="text-black font-bold text-3xl">Shop</h2>
+          <a
+            href="#"
+            class="inline-block border px-4 py-2 border-black font-medium text-black text-xs hover:bg-black hover:text-white transition"
+          >
+            View More
+          </a>
+        </div>
+
+        <!-- Product Items -->
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Item -->
+    <section class="py-[70px]">
+      <div class="container">
+        <div
+          class="section-head mb-8 flex justify-between items-center flex-wrap"
+        >
+          <h2 class="text-black font-bold text-3xl">T-Shirts</h2>
+          <a
+            href="#"
+            class="inline-block border px-4 py-2 border-black font-medium text-black text-xs hover:bg-black hover:text-white transition"
+          >
+            View More
+          </a>
+        </div>
+
+        <!-- Product Items -->
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 w-1/4">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1627913363993-95b23378265e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt=""
+                class="w-full aspect-square"
+              />
+              <div class="content">
+                <h4 class="mt-4 text-xl font-semibold text-black">
+                  Niikki Osaka Japan
+                </h4>
+                <p class="text-black font-medium mt-[5px]">$99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#6B6B6B] py-[70px]">
+      <div class="container">
+        <div class="flex flex-wrap justify-between -mx-6">
+          <div class="max-w-[500px] w-full px-6">
+            <h2 class="text-4xl font-bold text-black mb-4">
+              Sign up for our newsletter
+            </h2>
+            <p class="text-gray-700 text-lg">
+              Be the first to know about our special offers, new product
+              launches, and events
+            </p>
+            <form class="mt-6 relative">
+              <input
+                type="text"
+                class="border border-[#6B6B6B] bg-transparent text-black w-full py-2 px-3 outline-none pr-24"
+                placeholder="Email Address"
+              />
+              <button
+                class="absolute right-0 top-0 text-black px-4 h-full block font-medium bg-transparent border-none outline-none hover:bg-black hover:text-white transition"
+              >
+                Sign Up
+              </button>
+            </form>
+            <p class="text-black font-medium mt-12 text-lg">
+              &copy; Copyright 2022. All Right Reserved.
+            </p>
+          </div>
+          <div class="w-1/2 px-6">
+            <div class="flex flex-wrap -mx-12">
+              <div class="px-12">
+                <h4 class="text-black font-semibold text-xl mb-6">Shop</h4>
+                <ul>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Women’s</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Men’s</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Kids’</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Shoes</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Equipment</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700"
+                      >By Activity</a
+                    >
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Gift Cards</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Sale</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="px-12">
+                <h4 class="text-black font-semibold text-xl mb-6">Shop</h4>
+                <ul>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Equipment</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700"
+                      >By Activity</a
+                    >
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Gift Cards</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Sale</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="px-12">
+                <h4 class="text-black font-semibold text-xl mb-6">Help</h4>
+                <ul>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700"
+                      >Order Status</a
+                    >
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Size Chart</a>
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700"
+                      >Returns & Warranty</a
+                    >
+                  </li>
+                  <li class="block my-2">
+                    <a href="#" class="font-medium text-gray-700">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- OwlCarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- This page script -->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      })
+    </script>
+  </body>
+</html>
